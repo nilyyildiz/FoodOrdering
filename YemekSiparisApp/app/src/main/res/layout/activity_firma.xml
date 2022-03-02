@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui_firma.firmaActivity">
+
+    <Button
+        android:id="@+id/gelen_siparis_firma_button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-black"
+        android:onClick="gelenSiparislerActivity"
+        android:text="Gelen Siparişler"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bilgi_guncelle_firma_button"
+        app:layout_constraintEnd_toStartOf="@+id/bilgi_guncelle_firma_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bilgi_guncelle_firma_button" />
+
+    <Button
+        android:id="@+id/menu_guncelle_firma_button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-black"
+        android:onClick="restoranMenusuneGit"
+        android:text="Menüyü Güncelle"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/onay_bilgi_tv_firma"
+        app:layout_constraintEnd_toEndOf="@+id/gelen_siparis_firma_button"
+        app:layout_constraintStart_toStartOf="@+id/gelen_siparis_firma_button"
+        app:layout_constraintTop_toBottomOf="@+id/bilgi_guncelle_firma_button" />
+
+    <Button
+        android:id="@+id/bilgi_guncelle_firma_button"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-black"
+        android:onClick="firmaGuncelleGit"
+        android:text="Firma Bilgisini Güncelle/Değiştir"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_guncelle_firma_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gelen_siparis_firma_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onay_bilgi_tv_firma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/alternativeColor"
+        android:drawableLeft="@drawable/ic_info_outline_light_24dp"
+        android:padding="5dp"
+        android:text="Hesabınız admin tarafından henüz onaylanmadı!"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_guncelle_firma_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

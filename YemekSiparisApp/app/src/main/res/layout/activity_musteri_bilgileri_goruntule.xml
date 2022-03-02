@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui_admin.MusteriListeleAdmin.MusteriBilgileriGoruntule">
+
+
+        <TextView
+            android:id="@+id/textview_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/holo_red_light"
+            android:text="mail"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+        android:id="@+id/textview_soyisim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/holo_red_light"
+        android:text="soyisim"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/textview_isim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/holo_red_light"
+        android:text="isim"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/textview_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/holo_red_light"
+        android:text="telno"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/buton12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/alternativeColor"
+        android:text="KAralisteye al"
+        android:textColor="@color/textColor" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/alternativeColor"
+        android:text="Karalisteden Çıkar"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textView66"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>
